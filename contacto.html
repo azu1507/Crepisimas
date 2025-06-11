@@ -1,0 +1,36 @@
+<html lang="es">
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Inicio | Mi Tienda en Linea </title>
+  <link rel="stylesheet" href="css/estilos.css"
+</head>
+<body>
+  <header>
+    <h1>Crepisimas</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="producto.html">Producto</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+      <selection class="busqueda">
+        <input type="text" id="buscador" placeholder="🔍Buscar productos..." 
+         oninput="filtrarProductos()"/>
+      </selection>
+  </header>
+  <main>
+    <form>
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" required/>
+      
+      <label for="mensaje">Mensaje</label>
+      <!--textarea para mensajes largos-->
+      <textarea id="mensaje" required></textarea>
+      
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+</body>
+</html>

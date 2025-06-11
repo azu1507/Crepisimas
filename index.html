@@ -1,0 +1,99 @@
+<html lang="es">
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Inicio | Mi Tienda en Linea </title>
+  <link rel="stylesheet" href="css/estilos.css"
+</head>
+<body>
+  <header>
+    <h1>Crepisimas</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="producto.html">Producto</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+      <selection class="busqueda">
+        <input type="text" id="buscador" placeholder="🔍Buscar productos..." 
+         oninput="filtrarProductos()"/>
+      </selection>
+  </header>
+  <main>
+    <h2>Bienvenido a nuestra tienda en linea</h2>
+    <p>Encuentra los mejores productos al menor precio</p>
+    <seletion class="ofertas">
+      <h2>🧁Ofertas del día</h2>
+      <div class="productos">
+        <figure class="producto">
+          <img src="imágenes/nutela.jpg" width="200px" alt="Crepe Choco-fresa"/>
+          <figcaption>
+            <h3>Crepe Choco-fresa</h3>
+            <p class="descripción">Crepa de nutela, fresa, queso philadelphia, (otros)</p>
+            <p class="precio-oferta"><del>$55.00</del> $45.00</p>
+            <p class="rating">⭐⭐⭐⭐⭐</p>
+            <button onclick="agregarAlCarrito('Crepe Choco-fresa', 4500)">Agregar al Carrito</button>
+          </figcaption>
+        </figure>
+        <figure class="producto">
+          <img src="imágenes/durazno.jpg" width="200px" alt="Crepe Frutal Delicia"/>
+          <figcaption>
+            <h3>Crepe Frutal Delicia</h3>
+            <p class="descripción">Crepa de dulce de leche, con fresas y durazno almibar</p>
+            <p class="precio-oferta"><del>$60.00</del> $50.00</p>
+            <p class="rating">⭐⭐⭐⭐⭐</p>
+            <button onclick="agregarAlCarrito('Crepe Frutal Delicia', 5000)">Agregar al Carrito</button>
+          </figcaption>
+        </figure>
+        <figure class="producto">
+          <img src="imágenes/oreo.jpg" width="200px" alt="Crepe Ice Oreo"/>
+          <figcaption>
+            <h3>Crepe Ice Oreo </h3>
+            <p class="descripción">Crepa de chocolate, con galleta oreo y helado de chocolate</p>
+            <p class="precio-oferta"><del>$60.00</del> $40.00</p>
+            <p class="rating">⭐⭐⭐⭐⭐</p>
+            <button onclick="agregarAlCarrito('Crepe Ice Oreo', 4000)">Agregar al Carrito</button>
+          </figcaption>
+        </figure>
+        <figure class="producto">
+          <img src="imágenes/vainilla.jpg" width="200px" alt="Crepe Choco-vainilla"/>
+          <figcaption>
+            <h3>Crepe Choco-vainilla</h3>
+            <p class="descripción">Crepa sabor vainilla con helado de vainilla y sirope de chocolate</p>
+            <p class="precio-oferta"><del>$55.00</del> $45.00</p>
+            <p class="rating">⭐⭐⭐⭐⭐</p>
+            <button onclick="agregarAlCarrito('Crepe Choco-vainilla', 4500)">Agregar al Carrito</button>
+          </figcaption>
+        </figure>
+       <figure class="producto">
+          <img src="imágenes/platano.jpg" width="200px" alt="Crepe Delicia de platano"/>
+          <figcaption>
+            <h3>Crepe Delicia de platano</h3>
+            <p class="descripción">Crepa de platano con chocolate (otros)</p>
+            <p class="precio-oferta"><del>$60.00</del> $40.00</p>
+            <p class="rating">⭐⭐⭐⭐⭐</p>
+            <button onclick="agregarAlCarrito('Crepe Delicia de platano', 4000)">Agregar al Carrito</button>
+          </figcaption>
+        </figure>
+       <figure class="producto">
+          <img src="imágenes/pistacho.jpg" width="200px" alt="Crepe Fresa Pistacho"/>
+          <figcaption>
+            <h3>Crepe Fresa Pistacho</h3>
+            <p class="descripción">Crepa de pistacho, fresas, pistachos, (dulce de preferencia)/p>
+            <p class="precio-oferta"><del>$75.00</del> $50.00</p>
+            <p class="rating">⭐⭐⭐⭐⭐</p>
+            <button onclick="agregarAlCarrito('Crepe Fresa Pistacho', 5000)">Agregar al Carrito</button>
+          </figcaption>
+        </figure>
+      </div>
+    </seletion>
+  </main>
+    <footer>
+      <p>&copy; 2025 Mi Tienda</p>
+      
+   <script src="js/main.js"></script>
+   
+    </footer> 
+</body>
+</html>
